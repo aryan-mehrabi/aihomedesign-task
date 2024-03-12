@@ -37,9 +37,9 @@ const onClickSave = () => {
       <p>Ratio: <span>16:9</span></p>
     </div>
     <div class="ml-auto flex gap-2">
-      <div class="p-2">
+      <button class="p-2 cursor-pointer">
         <IconEdit @click="isEditModal = true" />
-      </div>
+      </button>
       <BaseModal title="Change Image Name" v-if="isEditModal" @close-modal="isEditModal = false">
         <div class="flex flex-col gap-2">
           <BaseInput v-model="name" />
@@ -71,9 +71,9 @@ const onClickSave = () => {
           </button>
         </div>
       </BaseModal>
-      <div @click="isDeleteModal = true" class="p-2">
+      <button @click="isDeleteModal = true" class="p-2">
         <IconTrash />
-      </div>
+      </button>
     </div>
   </div>
 </template>
