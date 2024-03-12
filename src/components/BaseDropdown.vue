@@ -39,7 +39,7 @@ onClickOutside(target, () => (isOpen.value = false))
         {{ option.value }}
       </li>
     </ul>
-    <BaseModal title="Category" v-show="isOpen" class="top-0 md:hidden">
+    <BaseModal title="Category" v-show="isOpen" class="md:hidden">
       <ul class="text-left text-[#868695]">
         <li
           v-for="option in props.options"
